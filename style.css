@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #282c36;
+    color: white;
+}
+
+#map-container {
+    margin: 20px;
+}
+
+#game-map {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#game-map:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gold;
+}
+
+#game-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
