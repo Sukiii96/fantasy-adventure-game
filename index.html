@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fantasy Adventure</h1>
+    <p>Explore the world and interact with NPCs!</p>
+
+    <div id="map-container">
+        <img src="maps/magic-map.jpg" id="game-map" alt="Magic Map">
+        <button onclick="enterLocation('library')">📖 Mystic Library</button>
+        <button onclick="enterLocation('castle')">🏰 Castle of Time</button>
+        <button onclick="enterLocation('forest')">🌲 Whispering Woods</button>
+    </div>
+
+    <div id="game-container">
+        <p id="scene-text">Click on a location to begin your adventure!</p>
+        <input type="text" id="player-input" placeholder="Talk to NPC...">
+        <button onclick="talkToNPC()">Send</button>
+        <p id="npc-response"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
